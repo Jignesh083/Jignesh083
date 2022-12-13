@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <conio.h>
+
+main()
+{
+	int phy,bio,chem,math,com;
+	float per;
+	
+	printf("Enter the physics marks:");
+	scanf("%d",&phy);
+	
+	printf("Enter the chemistry marks:");
+	scanf("%d",&bio);
+	
+	printf("Enter the biology marks:");
+	scanf("%d",&chem);
+	
+	printf("Enter the mathematics marks:");
+	scanf("%d",&math);
+	
+	printf("Enter the computer marks:");
+	scanf("%d",&com);
+	
+	per = (chem+math+com+phy+bio)/5.0;
+	
+	printf("\nThe marks of percentages %.2f\t",per);
+	
+	if(per>=90){
+		printf("Grade A");
+	}
+	else if(per>=80){
+		printf("Grade B");
+	}
+	else if(per>=70){
+		printf("Grade C");
+	}
+	else if(per>=60){
+		printf("Grade D");
+	}
+	else if(per>=40){
+		printf("Grade E");
+	}
+	else if(per<=40){
+		printf("Grade F");
+	}
+	else {
+		printf("\nSorry you are fail");
+	}
+	
+    getch();	
+}
